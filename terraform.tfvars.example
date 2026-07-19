@@ -1,0 +1,9 @@
+bucket_name        = "my-example-bucket-${random_string.suffix.result}"
+enable_versioning  = true
+block_public_access = true
+
+common_tags = {
+  Environment = "dev"
+  Project     = "example"
+  Terraform   = "true"
+}
